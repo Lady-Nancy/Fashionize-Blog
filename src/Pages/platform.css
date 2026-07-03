@@ -1,0 +1,268 @@
+.platform-container {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #ffffff;
+  color: #111111;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.platform-container .badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: 1px solid #00f2fe; 
+  color: #00ced1; 
+  padding: 6px 14px;
+  border-radius: 0px; 
+  margin-bottom: 24px;
+}
+
+.platform-container button {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  padding: 14px 32px;
+  border-radius: 0px; 
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: none;
+}
+
+.platform-container .btn-primary {
+  background-color: #00f2fe;
+  color: #111111;
+  font-weight: 600;
+}
+
+.platform-container .btn-primary:hover {
+  background-color: #00ced1; 
+}
+
+.platform-container .btn-secondary {
+  background-color: transparent;
+  color: #111111;
+  border: 1px solid #00f2fe; 
+  margin-left: 12px;
+}
+
+.platform-container .btn-secondary:hover {
+  background-color: #00f2fe;
+  color: #111111;
+}
+
+.platform-container .btn-dark {
+  background-color: #111111;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 16px 36px;
+  border: 1px solid #00f2fe; 
+}
+
+.platform-container .btn-dark:hover {
+  background-color: #00f2fe;
+  color: #111111;
+}
+
+
+.platform-container .platform-hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 140px 20px 100px 20px;
+  text-align: center;
+}
+
+.platform-container .hero-content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: -2px;
+  line-height: 1.05;
+  text-transform: uppercase;
+  max-width: 900px;
+  margin: 0 auto 24px auto;
+}
+
+.platform-container .hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555555;
+  max-width: 650px;
+  margin: 0 auto 40px auto;
+}
+
+
+.platform-container .platform-features {
+  background-color: #fafafa;
+  padding: 100px 20px;
+  border-top: 1px solid #eaeaea;
+}
+
+.platform-container .section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.platform-container .section-header h2 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin-bottom: 10px;
+}
+
+.platform-container .section-header p {
+  color: #666666;
+  font-size: 1rem;
+}
+
+.platform-container .features-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.platform-container .feature-card {
+  padding: 40px 30px;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  transition: border-color 0.3s ease;
+}
+
+.platform-container .feature-card:hover {
+  border-color: #00f2fe; 
+}
+
+.platform-container .card-icon {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #00ced1; 
+}
+
+.platform-container .feature-card h3 {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  margin-bottom: 12px;
+}
+
+.platform-container .feature-card p {
+  color: #555555;
+  line-height: 1.65;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+
+.platform-container .tech-showcase {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 20px;
+}
+
+.platform-container .showcase-layout {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.platform-container .showcase-text {
+  flex: 1;
+}
+
+.platform-container .sub-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #00ced1; 
+}
+
+.platform-container .showcase-text h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin-top: 10px;
+  margin-bottom: 24px;
+}
+
+.platform-container .showcase-text p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444444;
+  margin-bottom: 30px;
+}
+
+.platform-container .spec-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.platform-container .spec-list li {
+  padding: 14px 0;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 0.95rem;
+  color: #333333;
+}
+
+.platform-container .spec-list li strong {
+  color: #00ced1; 
+}
+
+.platform-container .showcase-visual {
+  flex: 1;
+}
+
+.platform-container .showcase-visual img {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+  border-left: 4px solid #00f2fe; 
+}
+
+
+.platform-container .platform-footer-cta {
+  background-color: #111111;
+  color: #ffffff;
+  text-align: center;
+  padding: 120px 20px;
+  border-top: 3px solid #00f2fe; 
+}
+
+.platform-container .platform-footer-cta h2 {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin-bottom: 16px;
+}
+
+.platform-container .platform-footer-cta p {
+  color: #999999;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+
+@media (max-width: 968px) {
+  .platform-container .hero-content h1 {
+    font-size: 2.8rem;
+  }
+  
+  .platform-container .features-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .platform-container .showcase-layout {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .platform-container .showcase-visual img {
+    height: 350px;
+  }
+}

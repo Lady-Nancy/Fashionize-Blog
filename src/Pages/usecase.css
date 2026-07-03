@@ -1,0 +1,280 @@
+/* USE CASE CORE HOUSING SETUP */
+.usecase-container {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #ffffff;
+  color: #111111;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE LABELS */
+.usecase-container .strategy-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #00f2fe; /* Core Aqua Accent Line Label */
+  margin-bottom: 20px;
+}
+
+.usecase-container .case-number {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #888888;
+  margin-bottom: 15px;
+}
+
+.usecase-container .aqua-text {
+  color: #00f2fe !important;
+}
+
+/* BUTTON CONTROLS */
+.usecase-container button {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  padding: 16px 36px;
+  border-radius: 0px; /* Sharp technical edge lines */
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  border: none;
+}
+
+.usecase-container .btn-aqua {
+  background-color: #00f2fe;
+  color: #111111;
+}
+
+.usecase-container .btn-aqua:hover {
+  background-color: #00ced1;
+  transform: translateY(-2px);
+}
+
+.usecase-container .btn-white {
+  background-color: #ffffff;
+  color: #111111;
+  border: 1px solid transparent;
+}
+
+.usecase-container .btn-white:hover {
+  background-color: transparent;
+  color: #00f2fe;
+  border-color: #00f2fe; /* Switches container ring to aqua on dark segments */
+}
+
+/* HERO ZONE */
+.usecase-container .usecase-hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 150px 20px 80px 20px;
+}
+
+.usecase-container .hero-inner h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  letter-spacing: -3px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 0 0 30px 0;
+}
+
+.usecase-container .hero-inner p {
+  font-size: 1.25rem;
+  line-height: 1.65;
+  color: #444444;
+  max-width: 700px;
+  margin: 0;
+}
+
+/* CORE BLUEPRINT LAYOUT ENGINES */
+.case-blueprint-section {
+  padding: 120px 0;
+  border-top: 1px solid #eaeaea;
+}
+
+.case-blueprint-section.light-bg {
+  background-color: #ffffff;
+}
+
+.case-blueprint-section.dark-bg {
+  background-color: #111111; /* Contrast Stark Black Background Zone */
+  color: #ffffff;
+}
+
+.blueprint-layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.blueprint-layout.reversed {
+  flex-direction: row-reverse; /* Flips the direction alternating visual weights */
+}
+
+.blueprint-text {
+  flex: 1;
+}
+
+.blueprint-text h2 {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  letter-spacing: -1.5px;
+  margin: 0 0 10px 0;
+  line-height: 1.1;
+}
+
+.blueprint-text h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #00ced1; /* Aqua subheadings */
+  margin: 0 0 30px 0;
+  letter-spacing: -0.2px;
+}
+
+.blueprint-text p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #444444;
+  margin-bottom: 35px;
+}
+
+.dark-bg .blueprint-text p {
+  color: #cccccc; /* Soft lightened gray text for dark components readability */
+}
+
+/* TECHNICAL CONTENT LISTS */
+.blueprint-specs {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+  border-left: 3px solid #00f2fe; /* Custom Left Border Aqua Line Marker */
+  padding-left: 20px;
+}
+
+.blueprint-specs li {
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  color: #333333;
+}
+
+.dark-specs li {
+  color: #e5e5e5 !important;
+}
+
+.blueprint-specs li strong {
+  color: #111111;
+}
+
+.dark-specs li strong {
+  color: #00f2fe; /* Bullet descriptors pop out in Aqua under dark panels */
+}
+
+/* COMPONENT VISUAL PANELS */
+.blueprint-visual {
+  flex: 1;
+}
+
+.blueprint-visual img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.blueprint-visual img:hover {
+  transform: scale(1.01);
+}
+
+/* ATMOSPHERE SELECTOR SECTION */
+.usecase-selector-hub {
+  background-color: #fafafa;
+  padding: 100px 20px;
+  border-top: 1px solid #eaeaea;
+}
+
+.hub-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.hub-header h2 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin: 0 0 10px 0;
+}
+
+.hub-header p {
+  color: #666666;
+  margin: 0;
+}
+
+.hub-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.hub-card {
+  background: #ffffff;
+  padding: 40px 30px;
+  border: 1px solid #eaeaea;
+  transition: all 0.3s ease;
+}
+
+.hub-card:hover {
+  border-color: #00f2fe; /* Highlights bounds frame into aqua when hovered */
+  transform: translateY(-4px);
+}
+
+.hub-card h4 {
+  font-size: 1.15rem;
+  text-transform: uppercase;
+  margin: 0 0 15px 0;
+  letter-spacing: -0.5px;
+}
+
+.hub-card p {
+  color: #555555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+/* RESPONSIVE SCALING HANDLERS */
+@media (max-width: 968px) {
+  .usecase-container .hero-inner h1 {
+    font-size: 3rem;
+  }
+
+  .blueprint-layout, 
+  .blueprint-layout.reversed {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .blueprint-text h2 {
+    font-size: 2.2rem;
+  }
+
+  .blueprint-visual img {
+    height: 350px;
+    width: 100%;
+  }
+
+  .hub-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

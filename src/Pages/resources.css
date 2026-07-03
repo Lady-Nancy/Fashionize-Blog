@@ -1,0 +1,292 @@
+/* RESOURCE PAGE CORE ENGINE */
+.resources-container {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #ffffff;
+  color: #111111;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE LABELS */
+.resources-container .hub-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #00f2fe; /* Aqua Subheading Accent */
+  margin-bottom: 20px;
+}
+
+.resources-container .pulse-badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #111111;
+  background-color: #00f2fe; /* Aqua Badge Background */
+  padding: 4px 10px;
+  margin-bottom: 20px;
+}
+
+/* BUTTON SYSTEMS */
+.resources-container button {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  padding: 16px 36px;
+  border-radius: 0px; 
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+  border: none;
+}
+
+.resources-container .btn-aqua {
+  background-color: #00f2fe;
+  color: #111111;
+}
+
+.resources-container .btn-aqua:hover {
+  background-color: #00ced1;
+  transform: translateY(-2px);
+}
+
+/* HERO BOX */
+.resources-container .resources-hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 150px 20px 60px 20px;
+}
+
+.resources-container .hero-inner h1 {
+  font-size: 4.5rem;
+  font-weight: 700;
+  letter-spacing: -3px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 0 0 30px 0;
+}
+
+.resources-container .hero-inner p {
+  font-size: 1.25rem;
+  line-height: 1.65;
+  color: #444444;
+  max-width: 700px;
+  margin: 0;
+}
+
+/* FEATURED WORK ENGINE */
+.resources-container .featured-resource {
+  max-width: 1200px;
+  margin: 0 auto 120px auto;
+  padding: 0 20px;
+}
+
+.resources-container .featured-layout {
+  display: flex;
+  align-items: center;
+  background-color: #111111; /* Contrast Stark Black Wrapper */
+  color: #ffffff;
+}
+
+.resources-container .featured-text {
+  flex: 1;
+  padding: 60px;
+  border-left: 4px solid #00f2fe; /* Visual Aqua Line Anchor */
+}
+
+.resources-container .featured-text h2 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin: 0 0 20px 0;
+}
+
+.resources-container .featured-text p {
+  color: #cccccc;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.resources-container .featured-image {
+  flex: 1;
+  height: 450px;
+}
+
+.resources-container .featured-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* DOCUMENT GRID SECTIONS */
+.resources-container .resources-grid-section {
+  background-color: #fafafa;
+  padding: 100px 20px;
+  border-top: 1px solid #eaeaea;
+}
+
+.resources-container .grid-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.resources-container .grid-header h2 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  margin: 0 0 10px 0;
+}
+
+.resources-container .grid-header p {
+  color: #666666;
+  margin: 0;
+}
+
+.resources-container .resources-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.resources-container .resource-card {
+  background: #ffffff;
+  padding: 40px 30px;
+  border: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.resources-container .resource-card:hover {
+  border-color: #00f2fe; /* Frame lights up on hover */
+  transform: translateY(-4px);
+}
+
+.resources-container .card-index {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #00ced1; /* Aqua Index Markers */
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.resources-container .resource-card h3 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  margin: 0 0 15px 0;
+  letter-spacing: -0.5px;
+}
+
+.resources-container .resource-card p {
+  color: #555555;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0 0 30px 0;
+  flex-grow: 1; /* Pushes links neatly to base level */
+}
+
+.resources-container .card-link {
+  color: #111111;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.2s ease;
+}
+
+.resources-container .resource-card:hover .card-link {
+  color: #00ced1; /* Hyperlink text turns Aqua on card hover */
+}
+
+/* NEWSLETTER FOOTER ZONE */
+.resources-container .resources-footer-cta {
+  background-color: #111111;
+  color: #ffffff;
+  text-align: center;
+  padding: 120px 20px;
+  border-top: 4px solid #00f2fe;
+}
+
+.resources-container .resources-footer-cta h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: -1.5px;
+  margin: 0 0 15px 0;
+}
+
+.resources-container .resources-footer-cta p {
+  color: #888888;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+}
+
+.resources-container .newsletter-input-group {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+  border-bottom: 2px solid #ffffff; /* Minimal white bottom baseline border */
+  transition: border-color 0.3s ease;
+}
+
+.resources-container .newsletter-input-group:focus-within {
+  border-color: #00f2fe; /* Input border switches to Aqua when focused */
+}
+
+.resources-container .newsletter-input-group input {
+  flex-grow: 1;
+  background: transparent;
+  border: none;
+  padding: 16px;
+  color: #ffffff;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.resources-container .newsletter-input-group input:focus {
+  outline: none;
+}
+
+.resources-container .btn-submit {
+  background: transparent;
+  color: #00f2fe; 
+  padding: 16px 24px;
+}
+
+.resources-container .btn-submit:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 968px) {
+  .resources-container .hero-inner h1 {
+    font-size: 3rem;
+  }
+
+  .resources-container .featured-layout {
+    flex-direction: column;
+  }
+
+  .resources-container .featured-text {
+    padding: 40px 20px;
+    border-left: none;
+    border-top: 4px solid #00f2fe;
+  }
+
+  .resources-container .featured-image {
+    height: 300px;
+    width: 100%;
+  }
+
+  .resources-container .resources-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
