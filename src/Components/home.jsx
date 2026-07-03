@@ -3,7 +3,7 @@ import "../Pages/home.css"
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const Home = () => {
-useScrollReveal('.about > *, .imageSection, .container');
+useScrollReveal('.about > *, .imageSection, .them, .me, .us');
   return (
      <div className="wrapper">
       <div className="all">

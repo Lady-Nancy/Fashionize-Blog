@@ -286,11 +286,19 @@ body {
 
 
 @media screen and (max-width: 480px) {
+
+    .all {
+        height: 100vh;
+    }
   
   .about h1 {
     font-size: 36px;
     margin-left: 0;
-    padding-top: 12%;
+    padding-top: 16%;
+    padding-bottom: 3%;
+  }
+  .about2 {
+    margin-bottom: 5%;
   }
 
   .about p, h6 {
