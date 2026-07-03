@@ -288,7 +288,7 @@ body {
 @media screen and (max-width: 480px) {
 
     .all {
-        height: 100vh;
+        height: auto;
     }
   
   .about h1 {
