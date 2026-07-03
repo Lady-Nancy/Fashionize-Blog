@@ -9,7 +9,7 @@ body {
 }
 
 .all {
-  background-image: url(./img3-1.jpg); 
+  background-image: url("/public/img3-1.jpg"); 
   color: white;
   background-size: cover;
   width: 100%;
