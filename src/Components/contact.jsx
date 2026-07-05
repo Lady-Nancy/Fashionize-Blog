@@ -78,7 +78,7 @@ const Contact = () => {
                 name="email" 
                 value={formData.email} 
                 onChange={handleChange} 
-                placeholder="YOUR.EMAIL@DOMAIN.COM" 
+                placeholder="YOUR.EMAIL@GMAIL.COM" 
                 required 
               />
             </div>
