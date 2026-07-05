@@ -59,7 +59,7 @@ const Collection = () => {
       <div className="collection-slider-container">
         
         <button className="slider-arrow arrow-left" onClick={handlePrev} aria-label="Previous slide">
-          ✦
+          ⟪
         </button>
 
         <div className="collection-slider-window">
@@ -89,7 +89,7 @@ const Collection = () => {
         </div>
 
         <button className="slider-arrow arrow-right" onClick={handleNext} aria-label="Next slide">
-          ✦
+          ⟫
         </button>
 
       </div>
