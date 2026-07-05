@@ -1,0 +1,52 @@
+.advisors-wrapper {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.advisors-hero {
+  margin-bottom: 60px;
+}
+
+.advisors-badge {
+  font-size: 12px;
+  letter-spacing: 2px;
+  opacity: 0.6;
+  display: block;
+}
+
+.advisors-hero h1 {
+  margin-top: 10px;
+  font-size: 3rem;
+}
+
+.advisor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.advisor-card {
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 4px;
+}
+
+.advisor-card h3 {
+  margin: 0 0 5px 0;
+}
+
+.advisor-role {
+  font-size: 12px;
+  opacity: 0.5;
+  display: block;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.advisor-card p {
+  font-size: 0.95rem;
+  opacity: 0.7;
+  margin: 0;
+  line-height: 1.6;
+}

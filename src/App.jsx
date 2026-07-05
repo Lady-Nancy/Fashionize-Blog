@@ -9,6 +9,20 @@ import Resources from "./Components/resources";
 import Usecase from "./Components/usecase";
 import Footer from "./Components/footer"
 
+import Story from './Components/story';
+import Awards from './Components/awards';
+import Advisors from './Components/advisors';
+
+import Collection from './Components/collection';
+import StudioProcess from './Components/studioProcess';
+import NewArrivals from './Components/newArrivals';
+
+import WorkspaceCapsule from './Components/workspaceCapsule';
+import TransitTechnicals from './Components/transitTechnicals';
+import EveningDroplistPage from './Components/eveningDroplistPage';
+
+import CareersPage from './Components/careersPage'
+
 
 
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
@@ -16,7 +30,6 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 export default function App() {
   return (
    <Router>
-      {/* 1. Render your actual Navbar component here */}
       <Navbar />
       
       <Routes>
@@ -36,6 +49,20 @@ export default function App() {
         <Route path="/company" element={<Company />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/contact" element={<Contact />} />
+
+        <Route path="/story" element={<Story />} />
+        <Route path="/awards" element={<Awards />} />
+        <Route path="/advisors" element={<Advisors />} />
+
+        <Route path="/collection" element={<Collection />} />
+        <Route path="/studio-process" element={<StudioProcess />} />
+        <Route path="/new-arrivals" element={<NewArrivals />} />
+
+        <Route path="/workspace-capsule" element={<WorkspaceCapsule />} />
+        <Route path="/transit-technicals" element={<TransitTechnicals />} />
+        <Route path="/eveningDroplistPage" element={<EveningDroplistPage />} />
+
+        <Route path="/careersPage" element={<CareersPage />} />
       </Routes>
      
       <Footer />

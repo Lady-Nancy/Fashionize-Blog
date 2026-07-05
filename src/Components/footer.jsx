@@ -52,7 +52,7 @@ useScrollReveal('.footer-section');
 
       </div>
 
-      {/* Baseline / Copyright Strips */}
+     
       <div className="footer-baseline">
         <div className="baseline-container">
           <p className="copyright-text">

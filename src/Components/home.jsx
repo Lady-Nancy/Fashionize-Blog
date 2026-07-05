@@ -1,27 +1,15 @@
 import React from 'react'
 import "../Pages/home.css"
 import { useScrollReveal } from '../hooks/useScrollReveal';
+import { Link } from 'react-router-dom'; // 1. Import Link engine
 
 const Home = () => {
-useScrollReveal('.about > *, .imageSection, .them, .me, .us');
+  useScrollReveal('.about > *, .imageSection, .them, .me, .us');
+  
   return (
      <div className="wrapper">
       <div className="all">
-        {/* <div className="up">
-          <div className="up1">
-            <p>FASHIONIZE</p>
-            <p>Platform</p>
-            <p>Use cases</p>
-            <p>Company</p>
-            <p>Resources</p>
-            <p>Contact</p>
-          </div>
-          <div className="up2">
-            <h5>Wow Try SDK Now</h5>
-            <h4>Request a Demo</h4>
-          </div>
-        </div> */}
-
+      
         <div className="about">
           <h1>About Fashionize</h1>
           <div className="about1">
@@ -31,11 +19,12 @@ useScrollReveal('.about > *, .imageSection, .them, .me, .us');
               voluptas placeat velit maiores sequi, officia qui consectetur officiis deleniti.
             </p>
           </div>
+          
           <div className="about2">
-            <h6>OUR STORY</h6>
-            <h6>WHO WE ARE</h6>
-            <h6>OUR AWARDS</h6>
-            <h6>TRUSTED ADVISORS</h6>
+            <Link to="/story" className="about-link"><h6>OUR STORY</h6></Link>
+            <Link to="/company" className="about-link"><h6>WHO WE ARE</h6></Link>
+            <Link to="/awards" className="about-link"><h6>OUR AWARDS</h6></Link>
+            <Link to="/advisors" className="about-link"><h6>TRUSTED ADVISORS</h6></Link>
           </div>
         </div>
 

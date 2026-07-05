@@ -1,0 +1,141 @@
+.collection-wrapper {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.collection-hero {
+  margin-bottom: 60px;
+  max-width: 600px;
+}
+
+.collection-badge {
+  font-size: 11px;
+  letter-spacing: 2px;
+  opacity: 0.6;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.collection-hero h1 {
+  font-size: 3rem;
+  margin: 0 0 15px 0;
+}
+
+.collection-hero p {
+  font-size: 1.1rem;
+  opacity: 0.7;
+  line-height: 1.6;
+}
+
+
+.collection-slider-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.collection-slider-window {
+  width: 100%;
+  overflow: hidden;
+  padding: 15px 0;
+}
+
+.collection-slider-track {
+  display: flex;
+  width: 100%;
+  transform: translateX(var(--slide-transform, 0%));
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.product-card {
+  flex: 0 0 33.333%;
+  box-sizing: border-box;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.product-image-container {
+  width: 100%;
+  aspect-ratio: 3 / 4;        
+  background-color: #f4f4f4; 
+  margin-bottom: 15px;
+  overflow: hidden;           
+}
+
+.product-image-asset {
+  width: 100%;
+  height: 100%;
+  /*object-fit: cover;*/   
+  object-position: center;     
+  transition: transform 0.5s ease, opacity 0.3s ease;
+}
+
+
+.product-card:hover .product-image-asset {
+  transform: scale(1.05);     
+  opacity: 0.9;
+}
+
+
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.product-info h4 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.product-info span {
+  font-weight: 600;
+  font-size: 0.95rem;
+  opacity: 0.8;
+}
+
+
+
+.slider-arrow {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  color: #111111;
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  z-index: 10;
+  padding: 10px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  user-select: none;
+}
+
+.arrow-left { left: -25px; }
+.arrow-right { right: -25px; }
+
+.slider-arrow:hover { color: #666666; }
+.arrow-left:hover { transform: scale(1.2) translateX(-3px); }
+.arrow-right:hover { transform: scale(1.2) translateX(3px); }
+
+
+@media (max-width: 768px) {
+  .product-card {
+    flex: 0 0 100%;
+    padding: 0 20px;
+  }
+
+  .arrow-left { left: -10px; }
+  .arrow-right { right: -10px; }
+  
+  .collection-hero h1 {
+    font-size: 2.2rem;
+  }
+}

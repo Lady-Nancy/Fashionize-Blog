@@ -1,12 +1,13 @@
 import React from 'react';
 import "../Pages/usecase.css"
+import { Link } from 'react-router-dom';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const Usecase = () => {
     useScrollReveal('.blueprint-text > *, .blueprint-visual, .hub-card');
   return (
     <div className="usecase-container">
-      {/* Structural Editorial Header */}
+     
       <section className="usecase-hero">
         <div className="hero-inner">
           <span className="strategy-tag">Blueprints // Curation</span>
@@ -18,7 +19,6 @@ const Usecase = () => {
         </div>
       </section>
 
-      {/* Use Case 1: Cyber-Urban Workspace */}
       <section className="case-blueprint-section light-bg">
         <div className="blueprint-layout">
           <div className="blueprint-text">
@@ -35,7 +35,7 @@ const Usecase = () => {
               <li><strong>Core Pieces:</strong> Structured Blazers, Tech-Knit Coordinates, Deconstructed Trousers.</li>
               <li><strong>Fabric Engine:</strong> Wrinkle-resistant high-poly blends with dynamic recovery.</li>
             </ul>
-            <button className="btn-aqua">Explore Workspace Capsule</button>
+            <Link to="/workspace-capsule" className="btn-aqua">Explore Workspace Capsule</Link>
           </div>
           <div className="blueprint-visual">
             <img src="fashion-african-woman-silk-dress-600nw-2147305099.webp" alt="Cyber-Urban Workspace Silhouette Preview" />
@@ -43,7 +43,7 @@ const Usecase = () => {
         </div>
       </section>
 
-      {/* Use Case 2: High-Performance Street Transit */}
+     
       <section className="case-blueprint-section dark-bg">
         <div className="blueprint-layout reversed">
           <div className="blueprint-text">
@@ -59,7 +59,7 @@ const Usecase = () => {
               <li><strong>Core Pieces:</strong> Modular Trench Coats, Cargo Silhouettes, Fluid Windbreakers.</li>
               <li><strong>Fabric Engine:</strong> Water-repellent technical micro-weaves with thermal regulatory cores.</li>
             </ul>
-            <button className="btn-white">Shop Transit Technicals</button>
+            <Link to="/transit-technicals" className="btn-white">Shop Transit Technicals</Link>
           </div>
           <div className="blueprint-visual">
             <img src="img20-1.jpg" alt="High-Performance Transit Layout Design" />
@@ -67,7 +67,7 @@ const Usecase = () => {
         </div>
       </section>
 
-      {/* Use Case 3: After-Hours Statement */}
+     
       <section className="case-blueprint-section light-bg">
         <div className="blueprint-layout">
           <div className="blueprint-text">
@@ -83,7 +83,7 @@ const Usecase = () => {
               <li><strong>Core Pieces:</strong> Asymmetrical Evening Tunics, Heavyweight Structured Drapes, Accent Vests.</li>
               <li><strong>Fabric Engine:</strong> Heavy-drape premium tencel and raw tactile matte cotton formulations.</li>
             </ul>
-            <button className="btn-aqua">Discover Evening Droplist</button>
+            <Link to="/EveningDroplistPage" className="btn-aqua">Discover Evening Droplist</Link>
           </div>
           <div className="blueprint-visual">
             <img src="shotkit-dark-photography-0013.jpg" alt="After Hours Deep Accent Silhouette" />
@@ -91,7 +91,7 @@ const Usecase = () => {
         </div>
       </section>
 
-      {/* Lower Interactive Category Grid */}
+      
       <section className="usecase-selector-hub">
         <div className="hub-header">
           <h2>Shop by Atmosphere</h2>

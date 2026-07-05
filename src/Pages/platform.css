@@ -33,6 +33,19 @@
   border: none;
 }
 
+.cta-group .btn-primary, .btn-secondary {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 500;
+  padding: 14px 32px;
+  border-radius: 0px; 
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  border: none;
+  text-decoration: none;
+}
+
 .platform-container .btn-primary {
   background-color: #00f2fe;
   color: #111111;
@@ -61,6 +74,7 @@
   font-weight: 600;
   padding: 16px 36px;
   border: 1px solid #00f2fe; 
+  text-decoration: none;
 }
 
 .platform-container .btn-dark:hover {
@@ -247,6 +261,7 @@
 }
 
 
+
 @media (max-width: 968px) {
   .platform-container .hero-content h1 {
     font-size: 2.8rem;
@@ -265,4 +280,14 @@
   .platform-container .showcase-visual img {
     height: 350px;
   }
+}
+
+@media (max-width: 480px) {
+
+  .cta-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
 }

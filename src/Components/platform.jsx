@@ -1,12 +1,13 @@
 import React from 'react';
 import '../Pages/platform.css';
+import { Link } from 'react-router-dom';
 import { useScrollReveal } from '../hooks/useScrollReveal'; 
 
 const Platform = () => {
   useScrollReveal('.hero-content > *, .feature-card, .showcase-text, .showcase-visual, .platform-footer-cta > *');
   return (
     <div className="platform-container">
-      {/* Editorial Hero Section */}
+    
       <section className="platform-hero">
         <div className="hero-content">
           <span className="badge">The Fashionize Experience</span>
@@ -15,14 +16,13 @@ const Platform = () => {
             We are redefining the modern wardrobe. Explore our high-performance 
             design ecosystem, curated digital styling engines, and zero-waste studio pipeline.
           </p>
-          <div className="cta-group">
-            <button className="btn-primary">Explore The Collection</button>
-            <button className="btn-secondary">Our Studio Process</button>
-          </div>
+         <div className="cta-group">
+          <Link to="/collection" className="btn-primary">Explore The Collection</Link>
+          <Link to="/studio-process" className="btn btn-secondary">Our Studio Process</Link>
+        </div>
         </div>
       </section>
 
-      {/* The Pillars of Our Fashion Platform */}
       <section className="platform-features">
         <div className="section-header">
           <h2>The Retail Innovation</h2>
@@ -59,7 +59,6 @@ const Platform = () => {
         </div>
       </section>
 
-      {/* Brand Identity / Design Pipeline */}
       <section className="tech-showcase">
         <div className="showcase-layout">
           <div className="showcase-text">
@@ -83,12 +82,12 @@ const Platform = () => {
         </div>
       </section>
 
-      {/* Bottom CTA Block */}
+     
       <section className="platform-footer-cta">
         <h2>Change Your Aura Today.</h2>
         <p>Step into an uncompromising world of premium designs and bold silhouettes.</p>
-        <button className="btn-dark">Discover New Arrivals</button>
-      </section>
+       <Link to="/new-arrivals" className="btn-dark">Discover New Arrivals</Link>
+     </section>
     </div>
   );
 };

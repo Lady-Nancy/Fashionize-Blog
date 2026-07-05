@@ -1,4 +1,3 @@
-/* USE CASE CORE HOUSING SETUP */
 .usecase-container {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background-color: #ffffff;
@@ -8,14 +7,14 @@
   box-sizing: border-box;
 }
 
-/* BASE LABELS */
+
 .usecase-container .strategy-tag {
   display: inline-block;
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #00f2fe; /* Core Aqua Accent Line Label */
+  color: #00f2fe; 
   margin-bottom: 20px;
 }
 
@@ -32,14 +31,13 @@
   color: #00f2fe !important;
 }
 
-/* BUTTON CONTROLS */
+
 .usecase-container button {
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 600;
   padding: 16px 36px;
-  border-radius: 0px; /* Sharp technical edge lines */
   cursor: pointer;
   transition: all 0.25s ease-in-out;
   border: none;
@@ -48,6 +46,14 @@
 .usecase-container .btn-aqua {
   background-color: #00f2fe;
   color: #111111;
+  text-decoration: none;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  padding: 16px 36px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
 }
 
 .usecase-container .btn-aqua:hover {
@@ -59,15 +65,23 @@
   background-color: #ffffff;
   color: #111111;
   border: 1px solid transparent;
+  text-decoration: none;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  padding: 16px 36px;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
 }
 
 .usecase-container .btn-white:hover {
   background-color: transparent;
   color: #00f2fe;
-  border-color: #00f2fe; /* Switches container ring to aqua on dark segments */
+  border-color: #00f2fe;
 }
 
-/* HERO ZONE */
+
 .usecase-container .usecase-hero {
   max-width: 1200px;
   margin: 0 auto;
@@ -91,7 +105,7 @@
   margin: 0;
 }
 
-/* CORE BLUEPRINT LAYOUT ENGINES */
+
 .case-blueprint-section {
   padding: 120px 0;
   border-top: 1px solid #eaeaea;
@@ -102,7 +116,7 @@
 }
 
 .case-blueprint-section.dark-bg {
-  background-color: #111111; /* Contrast Stark Black Background Zone */
+  background-color: #111111; 
   color: #ffffff;
 }
 
@@ -116,7 +130,7 @@
 }
 
 .blueprint-layout.reversed {
-  flex-direction: row-reverse; /* Flips the direction alternating visual weights */
+  flex-direction: row-reverse; 
 }
 
 .blueprint-text {
@@ -134,7 +148,7 @@
 .blueprint-text h3 {
   font-size: 1.1rem;
   font-weight: 400;
-  color: #00ced1; /* Aqua subheadings */
+  color: #00ced1; 
   margin: 0 0 30px 0;
   letter-spacing: -0.2px;
 }
@@ -147,15 +161,15 @@
 }
 
 .dark-bg .blueprint-text p {
-  color: #cccccc; /* Soft lightened gray text for dark components readability */
+  color: #cccccc; 
 }
 
-/* TECHNICAL CONTENT LISTS */
+
 .blueprint-specs {
   list-style: none;
   padding: 0;
   margin: 0 0 40px 0;
-  border-left: 3px solid #00f2fe; /* Custom Left Border Aqua Line Marker */
+  border-left: 3px solid #00f2fe; 
   padding-left: 20px;
 }
 
@@ -174,10 +188,10 @@
 }
 
 .dark-specs li strong {
-  color: #00f2fe; /* Bullet descriptors pop out in Aqua under dark panels */
+  color: #00f2fe; 
 }
 
-/* COMPONENT VISUAL PANELS */
+
 .blueprint-visual {
   flex: 1;
 }
@@ -193,7 +207,7 @@
   transform: scale(1.01);
 }
 
-/* ATMOSPHERE SELECTOR SECTION */
+
 .usecase-selector-hub {
   background-color: #fafafa;
   padding: 100px 20px;
@@ -252,7 +266,7 @@
 }
 
 
-/* RESPONSIVE SCALING HANDLERS */
+
 @media (max-width: 968px) {
   .usecase-container .hero-inner h1 {
     font-size: 3rem;

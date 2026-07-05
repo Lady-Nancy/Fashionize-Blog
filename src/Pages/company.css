@@ -33,6 +33,7 @@
 .company-container .btn-aqua {
   background-color: #00f2fe;
   color: #111111;
+  text-decoration: none;
 }
 
 .company-container .btn-aqua:hover {
@@ -242,6 +243,7 @@
   font-size: 1.1rem;
   margin: 0 0 40px 0;
 }
+
 
 
 @media (max-width: 968px) {

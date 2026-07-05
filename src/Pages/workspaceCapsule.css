@@ -1,0 +1,115 @@
+.capsule-wrapper {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.capsule-hero {
+  margin-bottom: 60px;
+  max-width: 650px;
+}
+
+.capsule-badge {
+  font-size: 11px;
+  letter-spacing: 2px;
+  opacity: 0.6;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.capsule-hero h1 {
+  font-size: 3.5rem;
+  margin: 0 0 15px 0;
+  font-weight: 600;
+}
+
+.capsule-hero p {
+  font-size: 1.15rem;
+  opacity: 0.75;
+  line-height: 1.7;
+}
+
+
+.capsule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+}
+
+.spec-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.spec-image-box {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background-color: #f5f5f5;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+
+.spec-code-tag {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #111111;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 4px 8px;
+  border-radius: 2px;
+}
+
+.spec-image-asset {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  transition: transform 0.5s ease;
+}
+
+
+.spec-card:hover .spec-image-asset {
+  transform: scale(1.04);
+}
+
+
+
+.spec-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.spec-title-block h3 {
+  margin: 0 0 4px 0;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.spec-feature-text {
+  margin: 0;
+  font-size: 0.85rem;
+  opacity: 0.5;
+}
+
+.spec-price {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+
+
+@media (max-width: 768px) {
+  .capsule-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .capsule-hero h1 {
+    font-size: 2.4rem;
+  }
+}

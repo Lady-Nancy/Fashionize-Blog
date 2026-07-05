@@ -1,13 +1,14 @@
 import React from 'react';
 import '../Pages/company.css';
+import { Link } from 'react-router-dom';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 
 const Company = () => {
-    // Targets your brand mission statements, team grids, and history rows
+   
 useScrollReveal('.company-hero > *, .mission-statement, .team-card, .history-row, .manifesto-layout, .company-culture > *');
   return (
     <div className="company-container">
-      {/* Editorial Corporate Hero */}
+      
       <section className="company-hero">
         <div className="hero-inner">
           <span className="brand-tag">Our House // Fashionize</span>
@@ -19,7 +20,6 @@ useScrollReveal('.company-hero > *, .mission-statement, .team-card, .history-row
         </div>
       </section>
 
-      {/* Brand Numbers / Milestones */}
       <section className="company-metrics">
         <div className="metric-box">
           <span className="metric-num">01 //</span>
@@ -38,11 +38,11 @@ useScrollReveal('.company-hero > *, .mission-statement, .team-card, .history-row
         </div>
       </section>
 
-      {/* The Core Manifesto */}
+     
       <section className="company-manifesto">
         <div className="manifesto-layout">
           <div className="manifesto-visual">
-            <img src="shotkit-dark-photography-0013.jpg" alt="Fashionize studio atmosphere" />
+            <img src="rad.jpg" alt="Fashionize studio atmosphere" />
           </div>
           <div className="manifesto-text">
             <span className="accent-label">THE MANIFESTO</span>
@@ -59,7 +59,7 @@ useScrollReveal('.company-hero > *, .mission-statement, .team-card, .history-row
         </div>
       </section>
 
-      {/* The Team / Pillars */}
+      
       <section className="company-culture">
         <div className="culture-header">
           <h2>Our Studio Pillars</h2>
@@ -81,11 +81,11 @@ useScrollReveal('.company-hero > *, .mission-statement, .team-card, .history-row
         </div>
       </section>
 
-      {/* Corporate Call To Action */}
+     
       <section className="company-footer-cta">
         <h2>Join the Fashionize Movement</h2>
         <p>Explore opportunities within our design, engineering, and logistics studios.</p>
-        <button className="btn-aqua">View Open Positions</button>
+        <Link to="careersPage" className="btn-aqua">View Open Positions</Link>
       </section>
     </div>
   );
