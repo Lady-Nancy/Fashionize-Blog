@@ -1,0 +1,16 @@
+/* Forces your layout to take the full height of the viewport */
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Forces the content block to take all space, pinning footer to floor */
+.main-content {
+  flex: 1 0 auto;
+}
+
+/* Prevents footer from collapsing awkwardly */
+footer {
+  flex-shrink: 0;
+}

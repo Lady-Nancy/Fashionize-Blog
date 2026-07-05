@@ -23,49 +23,65 @@ import EveningDroplistPage from './Components/eveningDroplistPage';
 
 import CareersPage from './Components/careersPage'
 
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 
-
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+// 1. SCROLL RESET TRIGGER
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
 
 export default function App() {
   return (
-   <Router>
-      <Navbar />
-      
-      <Routes>
-          <Route path='/' element={<>
-          <Home />
-          <Platform/>
-          <Usecase />
-          <Company  />
-          <Resources />
-          <Contact />
-          </>
-          }/>
+    <Router>
+      {/* Fires every time a route changes to prevent seeing the footer first */}
+      <ScrollToTop /> 
 
-        <Route path="/" element={<Home />} /> 
-        <Route path="/platform" element={<Platform />} />
-        <Route path="/usecase" element={<Usecase />} />
-        <Route path="/company" element={<Company />} />
-        <Route path="/resources" element={<Resources />} />
-        <Route path="/contact" element={<Contact />} />
+      {/* 2. GLOBAL LAYOUT WRAPPER */}
+      <div className="app-layout">
+        <Navbar />
+        
+        {/* 3. WRAP CHANNELS/ROUTES IN MAIN */}
+        <main className="main-content">
+          <Routes>
+            <Route path='/' element={
+              <>
+                <Home />
+                <Platform/>
+                <Usecase />
+                <Company  />
+                <Resources />
+                <Contact />
+              </>
+            }/>
 
-        <Route path="/story" element={<Story />} />
-        <Route path="/awards" element={<Awards />} />
-        <Route path="/advisors" element={<Advisors />} />
+            <Route path="/platform" element={<Platform />} />
+            <Route path="/usecase" element={<Usecase />} />
+            <Route path="/company" element={<Company />} />
+            <Route path="/resources" element={<Resources />} />
+            <Route path="/contact" element={<Contact />} />
 
-        <Route path="/collection" element={<Collection />} />
-        <Route path="/studio-process" element={<StudioProcess />} />
-        <Route path="/new-arrivals" element={<NewArrivals />} />
+            <Route path="/story" element={<Story />} />
+            <Route path="/awards" element={<Awards />} />
+            <Route path="/advisors" element={<Advisors />} />
 
-        <Route path="/workspace-capsule" element={<WorkspaceCapsule />} />
-        <Route path="/transit-technicals" element={<TransitTechnicals />} />
-        <Route path="/eveningDroplistPage" element={<EveningDroplistPage />} />
+            <Route path="/collection" element={<Collection />} />
+            <Route path="/studio-process" element={<StudioProcess />} />
+            <Route path="/new-arrivals" element={<NewArrivals />} />
 
-        <Route path="/careersPage" element={<CareersPage />} />
-      </Routes>
-     
-      <Footer />
+            <Route path="/workspace-capsule" element={<WorkspaceCapsule />} />
+            <Route path="/transit-technicals" element={<TransitTechnicals />} />
+            <Route path="/eveningDroplistPage" element={<EveningDroplistPage />} />
+
+            <Route path="/careersPage" element={<CareersPage />} />
+          </Routes>
+        </main>
+        
+        <Footer />
+      </div>
     </Router>
   );
 }
